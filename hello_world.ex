@@ -1,8 +1,9 @@
 # this is a comment
 defmodule HelloWorld do
-  def say_hi do
-    IO.puts("Hello World")
+  import IO # example of importing the IO module
+  def say_hi(msg \\ "Hello World") do # example of default argument
+    puts(msg)
   end
-  def short_say_hi, do: IO.puts("One line Hello World")
+  def short_say_hi(msg), do: say_hi(msg)
 end
 
