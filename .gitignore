@@ -1,0 +1,2 @@
+# ignore compiled beam bytecode
+*.beam
